@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/communication.css">
+</head>
+<body>
+<div class="communicated">
+    <!-- <i class="return" id="back"></i> -->
+
+    <div class="bigBox">
+        <div class="connent">
+            <div class="contant" id="window-talk"></div>
+            <div class="send">
+                <!--  上传图片  -->
+                <form action="/upload/img" method="post" enctype="multipart/form-data" name="photo" id="selectPro"
+                      target="nm_iframe" multiple="multiple">
+                    <input type="file" name="photo" id="inputphoto" value="" multiple="multiple">
+                </form>
+
+                <!--   发送信息  -->
+                <div name="sent" id="msg1" class="seatArea" placeholder="请输入发送内容" contenteditable="true"
+                     style="overflow: auto;"></div>
+                <button class="stuSend" id="btn">发送</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- 加载模块的线程 -->
+<script src="./require.js"></script>
+<!-- 主线程 通过 WebWorker处理 worker 线程 -->
+<script type="text/javascript" src="./UI.js"></script>
+
+</body>
+</html>
+

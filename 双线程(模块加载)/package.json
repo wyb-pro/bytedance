@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "fs": "^0.0.1-security",
+    "require.js": "^1.0.0",
+    "vm": "^0.1.0"
+  }
+}

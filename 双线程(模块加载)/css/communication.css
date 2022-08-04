@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    background: #eee5e5;
+}
+.communicated{
+    width: 100%;
+    height: 100%;
+}
+.bigBox{
+    position: relative;
+    margin: 0 auto;
+    width: 1260px;
+    height: auto;
+    /* background-image: url(../img/peo-left.png),url(../img/peo.png); */
+    background-size: 15%;
+    background-position: 142px 246px,931px 227px;
+    background-repeat: no-repeat,no-repeat;
+}
+.return{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/fanhui.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.connent{
+    /* border: 1px solid #000; */
+    margin: 50px auto;
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    /* background: #fff; */
+}
+.contant{
+    border: 1px solid #888;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    overflow: auto;
+    border-radius: 10px 10px 0 0;
+    background: #fff;
+}
+.send{
+    position: relative;
+    width: 600px;
+    height: 150px;
+    border: 1px solid #888;
+    background: #fff;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+.seatArea{
+    margin: 0px;
+    width: 579px;
+    border: none;
+    height: 110px;
+    resize: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.stuSend{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+.stuSend:focus{
+    outline: none;
+}
+.own{
+    float: right;
+    overflow: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background: #7fff00;
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
+}
+.bg-green{
+
+    background: #9eea6a;
+}
+.bg-white{
+
+    background: #eee;
+}
+.other{
+    float: left;
+    overflow: auto;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+.line{
+    float: left;
+    width: 580px;
+}
+.seatArea:focus{
+    outline: none;
+    border: none;
+}
+.stuSend:hover{
+    color: #fff;
+    background: #8e0b02;
+}
+#data-list {
+
+    position: absolute;
+    right: 80px;
+    bottom: 6px;
+    border: none;
+    border-radius: 10px;
+    width: 116px;
+    height: 30px;
+    text-align: center;
+    color:
+            #333;
+    cursor: pointer;
+    border: 1px black;
+    display: block;
+
+
+}
+#data-list>*{
+    width: 98px;
+    height: 21px;
+}
+#get-page{
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.history{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color:#6b9bdc;
+}
+.loadding{
+    /* display: none; */
+    margin: 0 auto;
+    width: 20px;
+}
+
+.photo{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 110px;
+    right: 10px;
+    cursor: pointer;
+}
+#inputphoto{
+    position: absolute;
+    bottom: 97px;
+    right: 5px;
+    opacity: 0;
+    /* left: 140px; */
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+    cursor: pointer;
+}
+.seatArea:empty:before{
+    content: attr(placeholder);   /* element attribute*/
+    /*content: 'this is content';*/
+    color: #888;
+}
+/*焦点时内容为空*/
+.seatArea:focus:before{
+    content:none;
+}
+.seatArea img{
+    height: 100px;
+}
